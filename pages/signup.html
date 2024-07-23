@@ -48,7 +48,7 @@
             <div class="wrap">
               <div class="login-wrap p-2 p-md-4 rounded">
                 <div class="d-flex flex-column justify-center">
-                  <h4 class="text-center fw-bold">S'inscrire</h4>
+                  <h4 class="text-center fw-bold mb-4">S'inscrire</h4>
                 </div>
 
                 <form action="#" class="signin-form">
@@ -59,7 +59,7 @@
                       <label class="form-label" for="name">Nom</label>
                       <input type="text" class="form-control" required />
                     </div>
-                    <div class="form-group">
+                    <div class="form-gricon loginoup">
                       <label class="form-label" for="fisrtname">Prénoms</label>
                       <input type="text" class="form-control" required />
                     </div>
@@ -69,7 +69,7 @@
                     class="d-flex justify-content-between align-center gap-3 mx-4"
                   >
                     <div class="form-group">
-                      <label class="form-label" for="username"
+                      <label class="form-label" for="password"
                         >Mot de passe</label
                       >
                       <div>
@@ -79,58 +79,66 @@
                           class="form-control"
                           required
                         />
+                        <span
+                          toggle="#password-field"
+                          class="fa fa-fw fa-eye field-icon toggle-password"
+                        ></span>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="username"
+                      <label class="form-label" for="password"
                         >Confirmer mot de passe</label
                       >
                       <div>
                         <input
-                          id="password-field"
+                          id="confirm-password-field"
                           type="password"
                           class="form-control"
                           required
                         />
+                        <span
+                          toggle="#confirm-password-field"
+                          class="fa fa-fw fa-eye field-icon toggle-password"
+                        ></span>
                       </div>
                     </div>
                   </div>
 
                   <div
-                    class="d-flex justify-content-between align-center gap-3 mx-4"
+                    class="d-flex justify-content-between align-center gap-3 mx-4 border-5 mt-4"
                   >
-                    <div class="form-group">
+                    <div class="form-gricon loginoup">
                       <label class="form-label" for="phone">Téléphone</label>
                       <input type="text" class="form-control" required />
                     </div>
-                    <div class="form-group">
-                      <label class="form-label" for="role"> Rôle</label>
+                    <div class="form-group" id="role-select-apb">
+                      <label class="form-label" for="phone">Rôle</label>
                       <select
-                        class="custom-select"
+                        class="form-select custom-apb-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Role</option>
-                        <option value="1">Régisseur</option>
-                        <option value="2">Administrateur</option>
+                        <option selected>Choisir votre role</option>
+                        <option value="regisseur">Régisseur</option>
+                        <option value="administrateur">Administrateur</option>
                       </select>
                     </div>
                   </div>
 
-                  <div class="form-group mt-2">
+                  <div class="form-group">
                     <div class="mx-4">
                       <select
-                        class="custom-select"
+                        class="form-select custom-apb-select"
                         aria-label="Default select example"
                       >
                         <option selected>Centre d'arrêt</option>
-                        <option value="1">Centre 1</option>
-                        <option value="2">Centre 2</option>
-                        <option value="3">Centre 3</option>
+                        <option value="ville">Ville 1</option>
+                        <option value="ville">Ville 2</option>
+                        <option value="ville">Ville 3</option>
                       </select>
                     </div>
                   </div>
 
-                  <div class="form-group mx-4">
+                  <div class="form-group">
                     <button
                       type="submit"
                       class="form-control rounded submit-button"
